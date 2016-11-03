@@ -1,26 +1,18 @@
 #### What does this PR do?
 
-- awesome stuff
-- really cool feature
-- refactor X
+Fixes issue #2119 where undo's cause errors.
 
 #### Where should the reviewer start?
 
-- start on the src/summernote.js
+Look in src/js/base/core/dom.js#725
 
 #### How should this be manually tested?
 
-- click here and here
-
-#### Any background context you want to provide?
-
-- the gem needed to be updated... yada yada
+Keep doing undo's until you get an error.
 
 #### What are the relevant tickets?
 
-
-#### Screenshots (if for frontend)
-
+issue #2119
 
 ### Checklist
 - [ ] added relevant tests
