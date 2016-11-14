@@ -6,7 +6,7 @@
  * Copyright 2013-2016 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2016-08-07T05:11Z
+ * Date: 2016-11-14T13:47Z
  */
 (function (factory) {
   /* global define */
@@ -1183,7 +1183,11 @@
      * @param {array} offsets - offsetPath
      */
     var fromOffsetPath = function (ancestor, offsets) {
+      if(typeof ancestor === "undefined"){
+        return ancestor;
+      }
       var current = ancestor;
+
       for (var i = 0, len = offsets.length; i < len; i++) {
         if (current.childNodes.length <= offsets[i]) {
           current = current.childNodes[current.childNodes.length - 1];
